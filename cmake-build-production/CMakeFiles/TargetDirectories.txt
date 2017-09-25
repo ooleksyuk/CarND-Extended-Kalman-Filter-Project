@@ -1,3 +1,0 @@
-/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles/rebuild_cache.dir
-/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles/edit_cache.dir
-/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles/ExtendedKF.dir

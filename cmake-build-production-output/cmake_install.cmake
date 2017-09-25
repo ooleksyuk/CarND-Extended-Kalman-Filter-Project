@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

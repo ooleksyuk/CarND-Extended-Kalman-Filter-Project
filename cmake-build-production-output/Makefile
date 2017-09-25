@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production
+CMAKE_BINARY_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

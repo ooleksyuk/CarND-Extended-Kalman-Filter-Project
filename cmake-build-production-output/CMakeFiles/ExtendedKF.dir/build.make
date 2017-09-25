@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production
+CMAKE_BINARY_DIR = /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ExtendedKF.dir/depend.make
@@ -59,7 +59,7 @@ include CMakeFiles/ExtendedKF.dir/flags.make
 
 CMakeFiles/ExtendedKF.dir/src/main.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExtendedKF.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ExtendedKF.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/main.cpp.o -c /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/src/main.cpp
 
 CMakeFiles/ExtendedKF.dir/src/main.cpp.i: cmake_force
@@ -83,7 +83,7 @@ CMakeFiles/ExtendedKF.dir/src/main.cpp.o.provides.build: CMakeFiles/ExtendedKF.d
 
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.o: ../src/tools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExtendedKF.dir/src/tools.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/tools.cpp.o -c /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/src/tools.cpp
 
 CMakeFiles/ExtendedKF.dir/src/tools.cpp.i: cmake_force
@@ -107,7 +107,7 @@ CMakeFiles/ExtendedKF.dir/src/tools.cpp.o.provides.build: CMakeFiles/ExtendedKF.
 
 CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o: ../src/FusionEKF.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o -c /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp
 
 CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.i: cmake_force
@@ -131,7 +131,7 @@ CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o.provides.build: CMakeFiles/Extende
 
 CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: CMakeFiles/ExtendedKF.dir/flags.make
 CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o: ../src/kalman_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o -c /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp
 
 CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.i: cmake_force
@@ -169,7 +169,7 @@ ExtendedKF: CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
 ExtendedKF: CMakeFiles/ExtendedKF.dir/src/kalman_filter.cpp.o
 ExtendedKF: CMakeFiles/ExtendedKF.dir/build.make
 ExtendedKF: CMakeFiles/ExtendedKF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ExtendedKF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ExtendedKF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ExtendedKF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/ExtendedKF.dir/clean:
 .PHONY : CMakeFiles/ExtendedKF.dir/clean
 
 CMakeFiles/ExtendedKF.dir/depend:
-	cd /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production/CMakeFiles/ExtendedKF.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output /Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/cmake-build-production-output/CMakeFiles/ExtendedKF.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExtendedKF.dir/depend
 

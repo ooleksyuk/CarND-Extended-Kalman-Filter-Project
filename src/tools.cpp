@@ -1,4 +1,6 @@
 #include "tools.h"
+using namespace std;
+#include <iostream>
 
 Tools::Tools() {}
 

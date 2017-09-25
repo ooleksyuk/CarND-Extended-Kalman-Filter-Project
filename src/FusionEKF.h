@@ -4,14 +4,7 @@
 #include "kalman_filter.h"
 #include "tools.h"
 #include <eigen3/Eigen/Dense>
-#include <vector>
-#include <string>
-#include <fstream>
-#include <iostream>
 using Eigen::MatrixXd;
-using Eigen::VectorXd;
-using std::vector;
-using namespace std;
 
 class FusionEKF {
 public:

@@ -1,4 +1,12 @@
 #include "FusionEKF.h"
+using Eigen::VectorXd;
+using std::vector;
+using namespace std;
+#include <vector>
+#include <string>
+#include <fstream>
+#include <iostream>
+
 /*
  * Constructor.
  */

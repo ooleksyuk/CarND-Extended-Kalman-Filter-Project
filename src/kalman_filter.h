@@ -1,10 +1,8 @@
 #pragma once
 
 #include <eigen3/Eigen/Dense>
-#include <iostream>
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
-using namespace std;
 
 class KalmanFilter {
 public:

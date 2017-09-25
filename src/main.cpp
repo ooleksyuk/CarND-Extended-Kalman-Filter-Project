@@ -1,4 +1,34 @@
-#include "main.h"
+#include <uWS/uWS.h>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <stdlib.h>
+#include "json.hpp"
+#include <math.h>
+#include "FusionEKF.h"
+#include "tools.h"
+
+using namespace std;
+
+// for convenience
+using json = nlohmann::json;
+
+// Checks if the SocketIO event has JSON data.
+// If there is data the JSON object in string format will be returned,
+// else the empty string "" will be returned.
+std::string hasData(std::string s) {
+  auto found_null = s.find("null");
+  auto b1 = s.find_first_of("[");
+  auto b2 = s.find_first_of("]");
+  if (found_null != std::string::npos) {
+    return "";
+  }
+  else if (b1 != std::string::npos && b2 != std::string::npos) {
+    return s.substr(b1, b2 - b1 + 1);
+  }
+  return "";
+}
 
 int main()
 {
@@ -108,7 +138,27 @@ int main()
           msgJson["rmse_vx"] = RMSE(2);
           msgJson["rmse_vy"] = RMSE(3);
           auto msg = "42[\"estimate_marker\"," + msgJson.dump() + "]";
-          // std::cout << msg << std::endl;
+          std::cout << msg << std::endl;
+
+          // Output file name
+          string out_file_name_ = "/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/output.txt";
+          ofstream out_file_(out_file_name_.c_str(), ofstream::out | ofstream::app);
+          if (!out_file_.is_open()) {
+            std::cerr << "Cannot open output file: " << out_file_name_ << endl;
+            exit(EXIT_FAILURE);
+          }
+
+          if (out_file_.is_open()) {
+            // est_px est_py est_vx est_vy meas_px meas_py gt_px gt_py gt_vx gt_vy
+            out_file_ << p_x << "\t" << p_y << "\t" << v1 << "\t" << v2 << "\t";
+            out_file_ << RMSE(0) << "\t" << RMSE(1) << "\t" << RMSE(2) << "\t" << RMSE(3) << endl;
+          }
+
+          // close files
+          if (out_file_.is_open()) {
+            out_file_.close();
+          }
+
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
 	  
         }

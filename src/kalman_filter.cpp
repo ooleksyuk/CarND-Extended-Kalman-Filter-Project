@@ -1,4 +1,6 @@
 #include "kalman_filter.h"
+#include <iostream>
+using namespace std;
 
 KalmanFilter::KalmanFilter() {}
 
@@ -68,6 +70,19 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
   VectorXd z_pred(3);
   z_pred << rho, phi, rho_dot;
   VectorXd y = z - z_pred;
+
+  if(y(1) < -M_PI){
+    while(y(1) < -M_PI)
+      y(1) = y(1) + 2 * M_PI;
+    assert(y(1) > -M_PI && y(1) < M_PI);
+  }
+
+  if(y(1) > M_PI){
+    while(y(1) > M_PI)
+      y(1) = y(1) - 2 * M_PI;
+    assert(y(1) > -M_PI && y(1) < M_PI);
+  }
+
   MatrixXd Ht = H_.transpose();
   MatrixXd S = H_ * P_ * Ht + R_;
   MatrixXd Si = S.inverse();

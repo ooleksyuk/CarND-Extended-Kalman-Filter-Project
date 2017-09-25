@@ -1,12 +1,10 @@
 #pragma once
 
 #include <vector>
+using std::vector;
 #include <eigen3/Eigen/Dense>
-#include <iostream>
 using Eigen::VectorXd;
 using Eigen::MatrixXd;
-using std::vector;
-using namespace std;
 
 class Tools {
 public:
