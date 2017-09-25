@@ -138,10 +138,10 @@ int main()
           msgJson["rmse_vx"] = RMSE(2);
           msgJson["rmse_vy"] = RMSE(3);
           auto msg = "42[\"estimate_marker\"," + msgJson.dump() + "]";
-          std::cout << msg << std::endl;
+          // std::cout << msg << std::endl;
 
           // Output file name
-          string out_file_name_ = "/Users/ovoitovych/mv_udacity/term2/P1-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/output.txt";
+          string out_file_name_ = "../output.txt";
           ofstream out_file_(out_file_name_.c_str(), ofstream::out | ofstream::app);
           if (!out_file_.is_open()) {
             std::cerr << "Cannot open output file: " << out_file_name_ << endl;
