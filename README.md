@@ -91,6 +91,41 @@ More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project resources page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/382ebfd6-1d55-4487-84a5-b6a5a4ba1e47)
 for instructions and the project rubric.
 
+## Rubrics Points
+
+### Your code should compile.. 
+* My code compiles without errors with `cmake` and `make`.
+
+    + `cd cmake-build-production-output`
+    + run `cmake ../` and `make`.
+    + I didn't change `CMakeLists.txt` as everything was there from the begining
+### px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt which is the same data file the simulator uses for Dataset 1"
+* I ran my algorithm against two data sets. On Data set 1 I have recorded values and analyzed them using python script from `CarND-Mercedes-SF-Utilities`.
+
+#### Data Set 1
+##### RMSE
+px	0.0651654
+py	0.0605668
+vx	0.542699
+vy	0.551745
+![image1](data_set_1.png)
+
+#### Data Set 2
+##### RMSE
+px	0.185496
+py	0.190302
+vx	0.476754
+vy	0.804469
+![image2](data_set_2.png)
+
+### My Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
+### My Kalman Filter algorithm handles the first measurements appropriately.
+### Kalman Filter algorithm first predicts then updates.
+### Kalman Filter can handle radar and lidar measurements.
+### Code styling
+* I have replaced `if def` conditionals in header files with `pragma once` as it's more modern and ensures same behaviour and protects from similarly named namespaces in different header files.
+
+
 ## Hints and Tips!
 
 * You don't have to follow this directory structure, but if you do, your work
