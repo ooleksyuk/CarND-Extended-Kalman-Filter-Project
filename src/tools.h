@@ -2,7 +2,7 @@
 
 #include <vector>
 using std::vector;
-#include <eigen3/Eigen/Dense>
+#include "Eigen/Dense"
 using Eigen::VectorXd;
 using Eigen::MatrixXd;
 

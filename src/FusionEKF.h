@@ -3,7 +3,7 @@
 #include "measurement_package.h"
 #include "kalman_filter.h"
 #include "tools.h"
-#include <eigen3/Eigen/Dense>
+#include "Eigen/Dense"
 using Eigen::MatrixXd;
 
 class FusionEKF {
