@@ -1,5 +1,4 @@
-# Extended Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+## <a name="top"></a> Extended Kalman Filter Project [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013)
 
 In this project you will utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project rubric. 
 
@@ -32,10 +31,15 @@ INPUT: values provided by the simulator to the c++ program
 OUTPUT: values provided by the c++ program to the simulator
 
 ["estimate_x"] <= kalman filter estimated position x
+
 ["estimate_y"] <= kalman filter estimated position y
+
 ["rmse_x"]
+
 ["rmse_y"]
+
 ["rmse_vx"]
+
 ["rmse_vy"]
 
 ---
